@@ -1,6 +1,6 @@
 # FisioTech API — Backend de Gestão Clínica
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Status](https://img.shields.io/badge/status-concluído-brightgreen)
 ![Node](https://img.shields.io/badge/Node.js-18+-green)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue)
 ![Railway](https://img.shields.io/badge/deploy-Railway-purple)
