@@ -6,10 +6,14 @@ const authMiddleware = require('../../middlewares/auth.middleware');
 // 🛡️ Segurança: Ninguém mexe nas sessões sem estar logado
 router.use(authMiddleware);
 
-// Rota para registrar uma sessão
-router.post('/', sessionsController.createSession);
 
-// Rota para ver o histórico de um paciente específico
+router.post('/',                  sessionsController.createSession);
+router.post('/schedule',          sessionsController.scheduleSession);
+router.get('/week',               sessionsController.getByWeek);     
 router.get('/patient/:patientId', sessionsController.getPatientSessions);
+router.get('/:id',                sessionsController.getSessionById);  // 
+router.patch('/:id/cancel',       sessionsController.cancelSession);
+router.patch('/:id/sign', sessionsController.signSession);
+router.put('/:id', sessionsController.updateSession);
 
 module.exports = router;
