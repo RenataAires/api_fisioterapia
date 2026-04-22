@@ -15,5 +15,6 @@ router.get('/:id',                sessionsController.getSessionById);  //
 router.patch('/:id/cancel',       sessionsController.cancelSession);
 router.patch('/:id/sign', sessionsController.signSession);
 router.put('/:id', sessionsController.updateSession);
+router.delete('/:id',             sessionsController.deleteSession);
 
 module.exports = router;
