@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const sessionsController = require('./sessions.controller');
-const {authMiddleware} = require('../../middlewares/auth.middleware');
+const authMiddleware = require('../../middlewares/auth.middleware');
 
 // 🛡️ Segurança: Ninguém mexe nas sessões sem estar logado
 router.use(authMiddleware);
