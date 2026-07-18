@@ -14,7 +14,7 @@ const dashboardRoutes = require("./modules/dashboard/dashboard.routes");
 app.use(helmet());
 
 app.use(
-  cors({
+  cors({  
     origin:
       process.env.NODE_ENV === "production" ? process.env.FRONTEND_URL : "*",
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
