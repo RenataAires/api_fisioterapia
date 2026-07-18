@@ -3,7 +3,7 @@ const router = express.Router();
 const { body } = require('express-validator');
 const validate = require('../../middlewares/validate.middleware');
 const patientsController = require('./patients.controller');
-const authMiddleware = require("../../middlewares/auth.middleware");
+const {authMiddleware} = require("../../middlewares/auth.middleware");
 
 router.use(authMiddleware);
 
